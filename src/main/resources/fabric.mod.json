@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "arete",
+  "version": "${version}",
+  "name": "Arete",
+  "description": "Arete(ah-rah-ti) the greek word for excellence",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/ace8underscore/Arete"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.cousinware.arete.Arete"
+    ],
+    "preLaunch": [
+      "com.cousinware.arete.client.KnotEntryPoint"
+    ],
+    "main": [
+      "com.cousinware.arete.client.AreteClient"
+    ]
+  },
+  "mixins": [
+    "arete.mixins.json"
+  ],
+  "accessWidener" : "arete.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

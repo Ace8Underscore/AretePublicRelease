@@ -1,0 +1,42 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.cousinware.arete.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractBlockMixin",
+    "AbstractBlockStateMixin",
+    "CactusBlockMixin",
+    "ClientConnectionMixin",
+    "EndermanEntityMixin",
+    "EntityMixin",
+    "FireworkRocketEntityMixin",
+    "LivingEntityMixin",
+    "MaceItemMixin",
+    "MapRendererMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+    "AbstractClientPlayerEntityMixin",
+    "BookEditScreenMixin",
+    "ChatHudMixin",
+    "ChatScreenMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "ClientWorldMixin",
+    "GlDebugMixin",
+    "InGameHudMixin",
+    "KeyboardMixin",
+    "MinecraftClientMixin",
+    "ChatInputSuggesterMixin",
+    "MouseMixin",
+    "PlayerListHudMixin",
+    "SoundSystemMixin",
+    "TitleScreenMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

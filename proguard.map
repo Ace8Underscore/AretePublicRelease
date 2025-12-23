@@ -1,0 +1,1398 @@
+com.cousinware.arete.Arete -> com.cousinware.arete.Arete:
+    void <init>() -> <init>
+    void onInitializeClient() -> onInitializeClient
+com.cousinware.arete.client.AreteClient -> com.cousinware.arete.client.AreteClient:
+    org.slf4j.Logger LOGGER -> LOGGER
+    java.lang.String CLIENTNAME -> CLIENTNAME
+    com.google.common.eventbus.EventBus eventBus -> eventBus
+    java.lang.String title -> title
+    java.util.ArrayList hwids -> hwids
+    com.cousinware.arete.managers.ThreadManager threadManager -> threadManager
+    java.util.ArrayList userList -> userList
+    java.awt.Color clientColor -> clientColor
+    com.cousinware.arete.utils.file.ConfigFolder configFolder -> a
+    com.cousinware.arete.client.AreteClient$OS os -> os
+    com.cousinware.arete.utils.texture.Capes capes -> capes
+    com.cousinware.arete.managers.RenderManager renderManager -> renderManager
+    com.cousinware.arete.managers.CommandManager commandManager -> commandManager
+    com.cousinware.arete.managers.ChatManager chatManager -> chatManager
+    com.cousinware.arete.managers.FriendManager friendManager -> friendManager
+    com.cousinware.arete.managers.SettingManager settingManager -> settingManager
+    com.cousinware.arete.managers.ModuleManager moduleManager -> moduleManager
+    com.cousinware.arete.managers.FontManager fontManager -> fontManager
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.AreteGui areteGui -> areteGui
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui gameGui -> gameGui
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGui fontGui -> fontGui
+    com.cousinware.arete.managers.KeybindManager keyboardManager -> keyboardManager
+    net.minecraft.class_327[] tr -> tr
+    com.cousinware.arete.managers.GameManager gameManager -> gameManager
+    com.cousinware.arete.managers.RotationManager rotationManager -> rotationManager
+    com.cousinware.arete.managers.PacketManager packetManager -> packetManager
+    java.lang.String currentHWID -> currentHWID
+    java.lang.String osName -> a
+    com.cousinware.arete.utils.emp.Users users -> users
+    java.util.Set validIgns -> validIgns
+    java.util.List members -> members
+    java.lang.Thread memberUpdateThread -> memberUpdateThread
+    void <init>() -> <init>
+    void onInitialize() -> onInitialize
+    net.minecraft.class_2960 getFileLocation(java.lang.String) -> getFileLocation
+    void initThreads() -> initThreads
+    void initClickGuis() -> initClickGuis
+    void hwidCheck() -> hwidCheck
+    void osCheck() -> osCheck
+    java.awt.Color getClientColor() -> getClientColor
+    void <clinit>() -> <clinit>
+com.cousinware.arete.client.AreteClient$OS -> com.cousinware.arete.client.AreteClient$OS:
+    com.cousinware.arete.client.AreteClient$OS WINDOWS -> WINDOWS
+    com.cousinware.arete.client.AreteClient$OS MAC -> MAC
+    com.cousinware.arete.client.AreteClient$OS LINUX -> LINUX
+    com.cousinware.arete.client.AreteClient$OS[] $VALUES -> a
+    com.cousinware.arete.client.AreteClient$OS[] values() -> values
+    com.cousinware.arete.client.AreteClient$OS valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    com.cousinware.arete.client.AreteClient$OS[] $values() -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.command.Command -> com.cousinware.arete.command.Command:
+    java.lang.String prefix -> a
+    void <init>() -> <init>
+    void setPrefix(java.lang.String) -> setPrefix
+    void sendClientSideMessage(java.lang.String) -> sendClientSideMessage
+    java.lang.String clientDecoPrefix() -> clientDecoPrefix
+    java.lang.String empPrefix(com.cousinware.arete.utils.emp.Member) -> empPrefix
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+    java.lang.String getPrefix() -> getPrefix
+    void <clinit>() -> <clinit>
+com.cousinware.arete.command.commands.AllFontsCommand -> com.cousinware.arete.command.commands.AllFontsCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.AllFriendsCommand -> com.cousinware.arete.command.commands.AllFriendsCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.AllMembers -> com.cousinware.arete.command.commands.AllMembers:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+    void lambda$onCommand$0(com.cousinware.arete.utils.emp.Member) -> a
+com.cousinware.arete.command.commands.BindCommand -> com.cousinware.arete.command.commands.BindCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.CommandsCommand -> com.cousinware.arete.command.commands.CommandsCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.FontCommand -> com.cousinware.arete.command.commands.FontCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.FriendCommand -> com.cousinware.arete.command.commands.FriendCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.HelpCommand -> com.cousinware.arete.command.commands.HelpCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.PrefixCommand -> com.cousinware.arete.command.commands.PrefixCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.SettingsCommand -> com.cousinware.arete.command.commands.SettingsCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.command.commands.ToggleCommand -> com.cousinware.arete.command.commands.ToggleCommand:
+    void <init>() -> <init>
+    void onCommand(java.lang.String[]) -> onCommand
+    java.lang.String commandHelpMessage() -> commandHelpMessage
+    java.lang.String commandUsage() -> commandUsage
+    java.lang.String[] commandCallName() -> commandCallName
+com.cousinware.arete.events.Event -> com.cousinware.arete.events.Event:
+    boolean cancelled -> a
+    void <init>() -> <init>
+    boolean isCancelled() -> isCancelled
+    void setCancelled(boolean) -> setCancelled
+com.cousinware.arete.events.event.DisconnectEvent -> com.cousinware.arete.events.event.DisconnectEvent:
+    net.minecraft.class_310 minecraftClient -> a
+    void <init>(net.minecraft.class_310) -> <init>
+    net.minecraft.class_310 getMc() -> getMc
+com.cousinware.arete.events.event.GameStartEvent -> com.cousinware.arete.events.event.GameStartEvent:
+    void <init>() -> <init>
+com.cousinware.arete.events.event.KeyPressedEvent -> com.cousinware.arete.events.event.KeyPressedEvent:
+    long window -> a
+    int key -> a
+    int scancode -> b
+    int action -> c
+    int modifiers -> d
+    void <init>(long,int,int,int,int) -> <init>
+    long getWindow() -> getWindow
+    int getKey() -> getKey
+    int getScancode() -> getScancode
+    int getAction() -> getAction
+    int getModifiers() -> getModifiers
+    void setWindow(long) -> setWindow
+    void setKey(int) -> setKey
+    void setScancode(int) -> setScancode
+    void setAction(int) -> setAction
+    void setModifiers(int) -> setModifiers
+com.cousinware.arete.events.event.LoadingIntoGameEvent -> com.cousinware.arete.events.event.LoadingIntoGameEvent:
+    void <init>() -> <init>
+com.cousinware.arete.events.event.MouseButtonEvent -> com.cousinware.arete.events.event.MouseButtonEvent:
+    long window -> a
+    int button -> a
+    int action -> b
+    int mods -> c
+    void <init>(long,int,int,int) -> <init>
+    long getWindow() -> getWindow
+    int getButton() -> getButton
+    int getAction() -> getAction
+    int getMods() -> getMods
+    void setWindow(long) -> setWindow
+    void setButton(int) -> setButton
+    void setAction(int) -> setAction
+    void setMods(int) -> setMods
+com.cousinware.arete.events.event.MouseButtonLocationEvent -> com.cousinware.arete.events.event.MouseButtonLocationEvent:
+    long window -> a
+    int mouseX -> a
+    int mouseY -> b
+    int mods -> c
+    void <init>(long,int,int,int) -> <init>
+    long getWindow() -> getWindow
+    int getMouseX() -> getMouseX
+    int getMouseY() -> getMouseY
+    int getMods() -> getMods
+com.cousinware.arete.events.event.PacketEvent -> com.cousinware.arete.events.event.PacketEvent:
+    net.minecraft.class_2596 packet -> a
+    void <init>(net.minecraft.class_2596) -> <init>
+    net.minecraft.class_2596 getPacket() -> getPacket
+com.cousinware.arete.events.event.PacketEvent$Receive -> com.cousinware.arete.events.event.PacketEvent$Receive:
+    void <init>(net.minecraft.class_2596) -> <init>
+com.cousinware.arete.events.event.PacketEvent$Send -> com.cousinware.arete.events.event.PacketEvent$Send:
+    void <init>(net.minecraft.class_2596) -> <init>
+com.cousinware.arete.events.event.PlayerJoinServerEvent -> com.cousinware.arete.events.event.PlayerJoinServerEvent:
+    net.minecraft.class_2703$class_5893 action -> a
+    net.minecraft.class_2703$class_2705 receivedEntry -> a
+    net.minecraft.class_640 currentEntry -> a
+    java.lang.String name -> a
+    void <init>(net.minecraft.class_2703$class_5893,net.minecraft.class_2703$class_2705,net.minecraft.class_640,java.lang.String) -> <init>
+    net.minecraft.class_2703$class_5893 getAction() -> getAction
+    net.minecraft.class_2703$class_2705 getReceivedEntry() -> getReceivedEntry
+    net.minecraft.class_640 getCurrentEntry() -> getCurrentEntry
+    java.lang.String getName() -> getName
+    void setAction(net.minecraft.class_2703$class_5893) -> setAction
+    void setReceivedEntry(net.minecraft.class_2703$class_2705) -> setReceivedEntry
+    void setCurrentEntry(net.minecraft.class_640) -> setCurrentEntry
+    void setName(java.lang.String) -> setName
+com.cousinware.arete.events.event.PlayerLeaveServerEvent -> com.cousinware.arete.events.event.PlayerLeaveServerEvent:
+    net.minecraft.class_7828 packet -> a
+    java.lang.String name -> a
+    void <init>(net.minecraft.class_7828,java.lang.String) -> <init>
+    net.minecraft.class_7828 getPacket() -> getPacket
+    java.lang.String getName() -> getName
+    void setPacket(net.minecraft.class_7828) -> setPacket
+    void setName(java.lang.String) -> setName
+com.cousinware.arete.events.event.PlayerListHudRenderEvent -> com.cousinware.arete.events.event.PlayerListHudRenderEvent:
+    int size -> a
+    void setSize(int) -> setSize
+    int getSize() -> getSize
+    void <init>(int) -> <init>
+com.cousinware.arete.events.event.PlayerSendMessageEvent -> com.cousinware.arete.events.event.PlayerSendMessageEvent:
+    java.lang.String text -> a
+    boolean addToHistory -> b
+    void <init>(java.lang.String,boolean) -> <init>
+    java.lang.String getText() -> getText
+    boolean isAddToHistory() -> isAddToHistory
+    void setText(java.lang.String) -> setText
+    void setAddToHistory(boolean) -> setAddToHistory
+com.cousinware.arete.events.event.PlayerTypeInChatFieldEvent -> com.cousinware.arete.events.event.PlayerTypeInChatFieldEvent:
+    java.lang.String text -> a
+    int keyCode -> a
+    int scanCode -> b
+    int modifiers -> c
+    void <init>(java.lang.String,int,int,int) -> <init>
+    java.lang.String getText() -> getText
+    int getKeyCode() -> getKeyCode
+    int getScanCode() -> getScanCode
+    int getModifiers() -> getModifiers
+    void setText(java.lang.String) -> setText
+    void setKeyCode(int) -> setKeyCode
+    void setScanCode(int) -> setScanCode
+    void setModifiers(int) -> setModifiers
+com.cousinware.arete.events.event.RecieveMessageEvent -> com.cousinware.arete.events.event.RecieveMessageEvent:
+    net.minecraft.class_2561 text -> a
+    boolean modified -> b
+    net.minecraft.class_7469 messageSignatureData -> a
+    net.minecraft.class_7591 indicator -> a
+    void <init>(net.minecraft.class_2561,net.minecraft.class_7469,net.minecraft.class_7591) -> <init>
+    net.minecraft.class_2561 getText() -> getText
+    void setMessage(net.minecraft.class_2561) -> setMessage
+    void setText(net.minecraft.class_2561) -> setText
+    net.minecraft.class_7469 getMessageSignatureData() -> getMessageSignatureData
+    boolean isModified() -> isModified
+    net.minecraft.class_7591 getIndicator() -> getIndicator
+com.cousinware.arete.events.event.RenderChatEvent -> com.cousinware.arete.events.event.RenderChatEvent:
+    java.lang.String text -> a
+    net.minecraft.class_332 context -> a
+    int mouseX -> a
+    int mouseY -> b
+    float delta -> a
+    void <init>(java.lang.String,net.minecraft.class_332,int,int,float) -> <init>
+    java.lang.String getText() -> getText
+    net.minecraft.class_332 getContext() -> getContext
+    int getMouseX() -> getMouseX
+    int getMouseY() -> getMouseY
+    float getDelta() -> getDelta
+    void setText(java.lang.String) -> setText
+    void setContext(net.minecraft.class_332) -> setContext
+    void setMouseX(int) -> setMouseX
+    void setMouseY(int) -> setMouseY
+    void setDelta(float) -> setDelta
+com.cousinware.arete.events.event.RenderOverlayEvent -> com.cousinware.arete.events.event.RenderOverlayEvent:
+    net.minecraft.class_332 context -> a
+    void <init>(net.minecraft.class_332) -> <init>
+    net.minecraft.class_332 getContext() -> getContext
+    void setContext(net.minecraft.class_332) -> setContext
+com.cousinware.arete.events.event.RenderWorldEvent -> com.cousinware.arete.events.event.RenderWorldEvent:
+    net.minecraft.class_4587 matrixStack -> a
+    org.joml.Matrix4f matrix4f -> a
+    org.joml.Matrix4f positionStack -> b
+    net.minecraft.class_4184 camera -> a
+    void <init>(net.minecraft.class_4587,org.joml.Matrix4f,org.joml.Matrix4f,net.minecraft.class_4184) -> <init>
+    net.minecraft.class_4587 getMatrixStack() -> getMatrixStack
+    org.joml.Matrix4f getMatrix4f() -> getMatrix4f
+    org.joml.Matrix4f getPositionStack() -> getPositionStack
+    net.minecraft.class_4184 getCamera() -> getCamera
+    void setMatrixStack(net.minecraft.class_4587) -> setMatrixStack
+    void setMatrix4f(org.joml.Matrix4f) -> setMatrix4f
+    void setPositionStack(org.joml.Matrix4f) -> setPositionStack
+    void setCamera(net.minecraft.class_4184) -> setCamera
+com.cousinware.arete.events.event.TickEvent -> com.cousinware.arete.events.event.TickEvent:
+    void <init>() -> <init>
+com.cousinware.arete.managers.ChatManager -> com.cousinware.arete.managers.ChatManager:
+    net.minecraft.class_310 mc -> a
+    com.cousinware.arete.command.Command com -> a
+    void <init>() -> <init>
+    boolean isCommandSent(com.cousinware.arete.events.event.PlayerSendMessageEvent) -> isCommandSent
+    void chatSuggestion(com.cousinware.arete.events.event.RenderChatEvent) -> chatSuggestion
+    void drawOutline(com.cousinware.arete.events.event.RenderChatEvent) -> drawOutline
+    void suggest(java.util.ArrayList,com.cousinware.arete.events.event.RenderChatEvent) -> suggest
+    java.lang.String getLongestCommand(java.util.ArrayList) -> getLongestCommand
+com.cousinware.arete.managers.CommandManager -> com.cousinware.arete.managers.CommandManager:
+    java.util.ArrayList commands -> a
+    void <init>() -> <init>
+    java.lang.String getPrefix() -> getPrefix
+    void callCommand(java.lang.String) -> callCommand
+    void addCommand() -> addCommand
+    java.util.ArrayList getCommands() -> getCommands
+    java.util.ArrayList getCommandNames() -> getCommandNames
+    java.util.ArrayList getCommandByStart(java.lang.String) -> getCommandByStart
+    com.cousinware.arete.command.Command getCommandByName(java.lang.String) -> getCommandByName
+com.cousinware.arete.managers.FontManager -> com.cousinware.arete.managers.FontManager:
+    int font -> font
+    float fontSize -> fontSize
+    java.lang.String selectedFont -> selectedFont
+    java.util.ArrayList loadedFontNames -> a
+    void <init>() -> <init>
+    void addLoadedFont(java.lang.String) -> addLoadedFont
+    java.util.ArrayList getLoadedFontNames() -> getLoadedFontNames
+    int getWidth(java.lang.String) -> getWidth
+    void addFont(java.lang.String,java.lang.String) -> addFont
+    net.minecraft.class_327 getFont() -> getFont
+    void renderTextMultiColor(net.minecraft.class_332,int,int,boolean,com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString[]) -> renderTextMultiColor
+    void renderTextMultiColorMc(net.minecraft.class_332,int,int,com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString[]) -> renderTextMultiColorMc
+    void renderTextMultiColorCustom(int,int,boolean,com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString[]) -> renderTextMultiColorCustom
+    void renderTextWithFont(java.lang.String,java.lang.String,int,int,java.awt.Color,boolean) -> renderTextWithFont
+    void drawLeftStringText(net.minecraft.class_332,java.lang.String,java.lang.String,int,int,java.awt.Color,boolean) -> drawLeftStringText
+    void drawText(net.minecraft.class_332,java.lang.String,int,int,java.awt.Color,boolean) -> drawText
+    void setSelectedFont(java.lang.String) -> setSelectedFont
+    float getStringWidth(java.lang.String,java.lang.String) -> getStringWidth
+    float getFontHeight(java.lang.String) -> getFontHeight
+    void drawTextCustom(java.lang.String,int,int,java.awt.Color,boolean) -> a
+    void start() -> start
+    void close() -> close
+    void restoreState() -> restoreState
+    void drawCenteredText(net.minecraft.class_332,java.lang.String,java.lang.String,int,int,java.awt.Color,boolean) -> drawCenteredText
+    void renderTextMc(net.minecraft.class_332,java.lang.String,int,int,java.awt.Color) -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.managers.FriendManager -> com.cousinware.arete.managers.FriendManager:
+    java.util.ArrayList friends -> a
+    void <init>() -> <init>
+    boolean addFriend(java.lang.String) -> addFriend
+    boolean removeFriend(java.lang.String) -> removeFriend
+    boolean isFriend(java.lang.String) -> isFriend
+    java.util.ArrayList getFriends() -> getFriends
+com.cousinware.arete.managers.GameManager -> com.cousinware.arete.managers.GameManager:
+    void <init>() -> <init>
+    void loadFonts(com.cousinware.arete.events.event.GameStartEvent) -> loadFonts
+    void loadTextures(com.cousinware.arete.events.event.GameStartEvent) -> loadTextures
+    void loadWindowsFonts() -> loadWindowsFonts
+com.cousinware.arete.managers.KeybindManager -> com.cousinware.arete.managers.KeybindManager:
+    net.minecraft.class_310 mc -> a
+    void <init>() -> <init>
+    void onKeyPressed(com.cousinware.arete.events.event.KeyPressedEvent) -> onKeyPressed
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+com.cousinware.arete.managers.ModuleManager -> com.cousinware.arete.managers.ModuleManager:
+    java.util.ArrayList modules -> a
+    boolean priorityUpdated -> priorityUpdated
+    void <init>() -> <init>
+    java.util.ArrayList getModules() -> getModules
+    void addModule() -> addModule
+    com.cousinware.arete.module.Module getModuleByName(java.lang.String) -> getModuleByName
+    void processTicks() -> processTicks
+    void processPostTicks() -> processPostTicks
+com.cousinware.arete.managers.PacketManager -> com.cousinware.arete.managers.PacketManager:
+    java.util.ArrayList quePackets -> a
+    net.minecraft.class_310 mc -> mc
+    void <init>() -> <init>
+    void onPreUpdate() -> onPreUpdate
+    boolean shouldModifyPacket(com.cousinware.arete.module.Module) -> shouldModifyPacket
+    void queuePacket(net.minecraft.class_2596) -> queuePacket
+com.cousinware.arete.managers.RenderManager -> com.cousinware.arete.managers.RenderManager:
+    java.util.ArrayList currentRender -> a
+    java.util.ArrayList deadRenders -> b
+    boolean debug -> a
+    com.cousinware.arete.utils.Timer debugTimer -> a
+    void <init>() -> <init>
+    void render(com.cousinware.arete.events.event.RenderWorldEvent) -> render
+    com.cousinware.arete.managers.RenderManager$Render postRender(com.cousinware.arete.managers.RenderManager$RenderMode,net.minecraft.class_1297,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color,java.lang.String,float) -> postRender
+    com.cousinware.arete.managers.RenderManager$Render postRender(com.cousinware.arete.managers.RenderManager$RenderMode,net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color,java.lang.String,float) -> postRender
+    com.cousinware.arete.managers.RenderManager$Render postRender(com.cousinware.arete.managers.RenderManager$RenderMode,net.minecraft.class_238,net.minecraft.class_243,net.minecraft.class_4587,java.awt.Color,boolean,java.lang.String) -> postRender
+    boolean correctColor(java.awt.Color,java.awt.Color) -> a
+    void setCurrentRender(java.util.ArrayList) -> setCurrentRender
+    void setDeadRenders(java.util.ArrayList) -> setDeadRenders
+    void setDebug(boolean) -> setDebug
+    void setDebugTimer(com.cousinware.arete.utils.Timer) -> setDebugTimer
+    java.util.ArrayList getCurrentRender() -> getCurrentRender
+    java.util.ArrayList getDeadRenders() -> getDeadRenders
+    boolean isDebug() -> isDebug
+    com.cousinware.arete.utils.Timer getDebugTimer() -> getDebugTimer
+com.cousinware.arete.managers.RenderManager$Render -> com.cousinware.arete.managers.RenderManager$Render:
+    java.lang.String id -> a
+    long aliveTime -> a
+    java.awt.Color color -> a
+    net.minecraft.class_4587 matrixStack -> a
+    net.minecraft.class_4184 camera -> a
+    net.minecraft.class_238 bb -> a
+    net.minecraft.class_243 pos -> a
+    com.cousinware.arete.managers.RenderManager$RenderMode renderMode -> a
+    me.surge.animation.Animation animation -> a
+    float animationSpeed -> a
+    net.minecraft.class_1297 entity -> a
+    double startingAlpha -> a
+    boolean fadingIn -> a
+    boolean dead -> b
+    void <init>(com.cousinware.arete.managers.RenderManager,com.cousinware.arete.managers.RenderManager$RenderMode,net.minecraft.class_1297,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color,java.lang.String,float) -> <init>
+    void <init>(com.cousinware.arete.managers.RenderManager,com.cousinware.arete.managers.RenderManager$RenderMode,net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color,java.lang.String,float) -> <init>
+    void <init>(com.cousinware.arete.managers.RenderManager,com.cousinware.arete.managers.RenderManager$RenderMode,net.minecraft.class_238,net.minecraft.class_243,net.minecraft.class_4587,java.awt.Color,boolean,java.lang.String) -> <init>
+    void tick(com.cousinware.arete.events.event.RenderWorldEvent) -> tick
+    me.surge.animation.Animation getNewAnimation() -> a
+    void render(com.cousinware.arete.events.event.RenderWorldEvent,net.minecraft.class_243) -> a
+    void restartAlpha() -> a
+    void kill() -> b
+    void updateColorAlpha(double) -> updateColorAlpha
+    long timeAlive() -> timeAlive
+    void setId(java.lang.String) -> setId
+    void setAliveTime(long) -> setAliveTime
+    void setColor(java.awt.Color) -> setColor
+    void setMatrixStack(net.minecraft.class_4587) -> setMatrixStack
+    void setCamera(net.minecraft.class_4184) -> setCamera
+    void setBb(net.minecraft.class_238) -> setBb
+    void setPos(net.minecraft.class_243) -> setPos
+    void setRenderMode(com.cousinware.arete.managers.RenderManager$RenderMode) -> setRenderMode
+    void setAnimation(me.surge.animation.Animation) -> setAnimation
+    void setAnimationSpeed(float) -> setAnimationSpeed
+    void setEntity(net.minecraft.class_1297) -> setEntity
+    void setStartingAlpha(double) -> setStartingAlpha
+    void setFadingIn(boolean) -> setFadingIn
+    void setDead(boolean) -> setDead
+    java.lang.String getId() -> getId
+    long getAliveTime() -> getAliveTime
+    java.awt.Color getColor() -> getColor
+    net.minecraft.class_4587 getMatrixStack() -> getMatrixStack
+    net.minecraft.class_4184 getCamera() -> getCamera
+    net.minecraft.class_238 getBb() -> getBb
+    net.minecraft.class_243 getPos() -> getPos
+    com.cousinware.arete.managers.RenderManager$RenderMode getRenderMode() -> getRenderMode
+    me.surge.animation.Animation getAnimation() -> getAnimation
+    float getAnimationSpeed() -> getAnimationSpeed
+    net.minecraft.class_1297 getEntity() -> getEntity
+    double getStartingAlpha() -> getStartingAlpha
+    boolean isFadingIn() -> isFadingIn
+    boolean isDead() -> isDead
+    me.surge.animation.Easing lambda$getNewAnimation$1() -> a
+    java.lang.Float lambda$getNewAnimation$0() -> a
+com.cousinware.arete.managers.RenderManager$RenderMode -> com.cousinware.arete.managers.RenderManager$RenderMode:
+    com.cousinware.arete.managers.RenderManager$RenderMode SolidBlock -> SolidBlock
+    com.cousinware.arete.managers.RenderManager$RenderMode BlockOutline -> BlockOutline
+    com.cousinware.arete.managers.RenderManager$RenderMode Custom -> Custom
+    com.cousinware.arete.managers.RenderManager$RenderMode[] $VALUES -> a
+    com.cousinware.arete.managers.RenderManager$RenderMode[] values() -> values
+    com.cousinware.arete.managers.RenderManager$RenderMode valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    com.cousinware.arete.managers.RenderManager$RenderMode[] $values() -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.managers.RotationManager -> com.cousinware.arete.managers.RotationManager:
+    java.util.ArrayList rotationSystems -> rotationSystems
+    float simulationYaw -> simulationYaw
+    boolean simulation -> simulation
+    void <init>() -> <init>
+    void onTick(com.cousinware.arete.events.event.TickEvent) -> onTick
+    boolean currentlyRotating() -> currentlyRotating
+    double getYaw(net.minecraft.class_243,boolean) -> getYaw
+    double getPitch(net.minecraft.class_243,boolean) -> getPitch
+    com.cousinware.arete.managers.RotationManager$Rotaion genRotation(net.minecraft.class_243) -> genRotation
+    void setRotationSystems(java.util.ArrayList) -> setRotationSystems
+    void setSimulationYaw(float) -> setSimulationYaw
+    void setSimulation(boolean) -> setSimulation
+    java.util.ArrayList getRotationSystems() -> getRotationSystems
+    float getSimulationYaw() -> getSimulationYaw
+    boolean isSimulation() -> isSimulation
+com.cousinware.arete.managers.RotationManager$Rotaion -> com.cousinware.arete.managers.RotationManager$Rotaion:
+    float yaw -> a
+    float pitch -> b
+    net.minecraft.class_3965 hitResult -> a
+    void <init>(float,float) -> <init>
+    void <init>(float,float,net.minecraft.class_3965) -> <init>
+    float getYaw() -> getYaw
+    float getPitch() -> getPitch
+    net.minecraft.class_3965 getHitResult() -> getHitResult
+com.cousinware.arete.managers.SettingManager -> com.cousinware.arete.managers.SettingManager:
+    java.util.ArrayList settingArrayList -> a
+    void <init>() -> <init>
+    void registerSetting(com.cousinware.arete.utils.settings.Setting) -> registerSetting
+    java.util.ArrayList getRegisteredSettings() -> getRegisteredSettings
+    com.cousinware.arete.utils.settings.Setting getSettingByName(com.cousinware.arete.module.Module,java.lang.String) -> getSettingByName
+com.cousinware.arete.managers.ThreadManager -> com.cousinware.arete.managers.ThreadManager:
+    java.lang.Thread loginThread -> loginThread
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.cousinware.arete.mixins.AbstractBlockMixin -> com.cousinware.arete.mixins.AbstractBlockMixin:
+    void <init>() -> <init>
+    void blocksMoveWeb(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable) -> blocksMoveWeb
+com.cousinware.arete.mixins.CactusBlockMixin -> com.cousinware.arete.mixins.CactusBlockMixin:
+    void <init>() -> <init>
+com.cousinware.arete.mixins.CapeFeatureRendererMixin -> com.cousinware.arete.mixins.CapeFeatureRendererMixin:
+    void <init>() -> <init>
+    net.minecraft.class_2960 modifyCapeTexture(net.minecraft.class_2960,net.minecraft.class_4587,net.minecraft.class_4597,int,net.minecraft.class_742,float,float,float,float,float,float) -> modifyCapeTexture
+com.cousinware.arete.mixins.ChatHudMixin -> com.cousinware.arete.mixins.ChatHudMixin:
+    java.util.List field_2061 -> field_2061
+    net.minecraft.class_310 field_2062 -> field_2062
+    boolean skipOnAddMessage -> skipOnAddMessage
+    void <init>() -> <init>
+    int renderChatColor(net.minecraft.class_7591) -> renderChatColor
+    void method_44811(net.minecraft.class_2561,net.minecraft.class_7469,net.minecraft.class_7591) -> method_44811
+    void onAddMessage(net.minecraft.class_2561,net.minecraft.class_7469,net.minecraft.class_7591,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onAddMessage
+com.cousinware.arete.mixins.ChatInputSuggestorMixin -> com.cousinware.arete.mixins.ChatInputSuggestorMixin:
+    net.minecraft.class_342 field_21599 -> field_21599
+    int field_21606 -> field_21606
+    java.util.concurrent.CompletableFuture field_21611 -> field_21611
+    void <init>() -> <init>
+    void renderMessage(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> renderMessage
+com.cousinware.arete.mixins.ChatScreenMixin -> com.cousinware.arete.mixins.ChatScreenMixin:
+    net.minecraft.class_4717 field_21616 -> field_21616
+    net.minecraft.class_342 field_2382 -> field_2382
+    void <init>() -> <init>
+    void messageSent(java.lang.String,boolean,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> messageSent
+    void keyPressed(int,int,int,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable) -> keyPressed
+    void renderChat(net.minecraft.class_332,int,int,float,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> renderChat
+com.cousinware.arete.mixins.ClientConnectionMixin -> com.cousinware.arete.mixins.ClientConnectionMixin:
+    void <init>() -> <init>
+    void onSendPacket(net.minecraft.class_2596,net.minecraft.class_7648,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onSendPacket
+    void channelRead0(io.netty.channel.ChannelHandlerContext,net.minecraft.class_2596,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> channelRead0
+com.cousinware.arete.mixins.ClientPlayNetworkHandlerMixin -> com.cousinware.arete.mixins.ClientPlayNetworkHandlerMixin:
+    com.cousinware.arete.events.event.PlayerLeaveServerEvent pastLeaveEvent -> pastLeaveEvent
+    void <init>() -> <init>
+    void playerJoinServer(net.minecraft.class_2703$class_5893,net.minecraft.class_2703$class_2705,net.minecraft.class_640,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> playerJoinServer
+    void gameStateChange(net.minecraft.class_2668,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> gameStateChange
+    void playerLeaveServer(net.minecraft.class_7828,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> playerLeaveServer
+    java.lang.String getName(net.minecraft.class_7828) -> getName
+com.cousinware.arete.mixins.ElytraFeatureRendererMixin -> com.cousinware.arete.mixins.ElytraFeatureRendererMixin:
+    void <init>() -> <init>
+    net.minecraft.class_8685 modifyCapeTexture1(net.minecraft.class_742) -> modifyCapeTexture1
+com.cousinware.arete.mixins.EntityMixin -> com.cousinware.arete.mixins.EntityMixin:
+    void <init>() -> <init>
+    boolean equals(java.lang.Object) -> equals
+    float method_36454() -> method_36454
+    float setFloatG(float) -> setFloatG
+    float setFloatF(float) -> setFloatF
+com.cousinware.arete.mixins.InGameHudMixin -> com.cousinware.arete.mixins.InGameHudMixin:
+    void <init>() -> <init>
+    void renderGameOverlay(net.minecraft.class_332,net.minecraft.class_9779,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> renderGameOverlay
+com.cousinware.arete.mixins.KeyboardMixin -> com.cousinware.arete.mixins.KeyboardMixin:
+    void <init>() -> <init>
+    void onKey(long,int,int,int,int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onKey
+com.cousinware.arete.mixins.LivingEntityMixin -> com.cousinware.arete.mixins.LivingEntityMixin:
+    void <init>() -> <init>
+com.cousinware.arete.mixins.MaceItemMixin -> com.cousinware.arete.mixins.MaceItemMixin:
+    void <init>() -> <init>
+    void doExtraDamage(net.minecraft.class_1309,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable) -> doExtraDamage
+    void extraDamage(net.minecraft.class_1297,float,net.minecraft.class_1282,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable) -> extraDamage
+com.cousinware.arete.mixins.MinecraftClientMixin -> com.cousinware.arete.mixins.MinecraftClientMixin:
+    void <init>() -> <init>
+    net.minecraft.class_310 method_1551() -> method_1551
+    void method_1574() -> method_1574
+    void onUpdate(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onUpdate
+    java.lang.String updateWindowTitleInvoke$setTitle(java.lang.String) -> updateWindowTitleInvoke$setTitle
+    void onPostUpdate(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onPostUpdate
+    void initTail(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> initTail
+    void onDisconnect(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onDisconnect
+com.cousinware.arete.mixins.MouseMixin -> com.cousinware.arete.mixins.MouseMixin:
+    void <init>() -> <init>
+    void onMouseButton(long,int,int,int,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onMouseButton
+com.cousinware.arete.mixins.PlayerEntityMixin -> com.cousinware.arete.mixins.PlayerEntityMixin:
+    void <init>() -> <init>
+    void tickMovement(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> tickMovement
+    void dropItem(net.minecraft.class_1799,boolean,boolean,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable,double,net.minecraft.class_1542,float,float,float,float,float,float,float) -> dropItem
+com.cousinware.arete.mixins.PlayerEntityRendererMixin -> com.cousinware.arete.mixins.PlayerEntityRendererMixin:
+    void <init>() -> <init>
+    void nameTags(net.minecraft.class_742,net.minecraft.class_2561,net.minecraft.class_4587,net.minecraft.class_4597,int,float,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> nameTags
+com.cousinware.arete.mixins.PlayerListHudMixin -> com.cousinware.arete.mixins.PlayerListHudMixin:
+    int field_32205 -> field_32205
+    void <init>() -> <init>
+    void getPlayerName(net.minecraft.class_640,org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable) -> getPlayerName
+    long modifyCount(long) -> modifyCount
+    void <clinit>() -> <clinit>
+com.cousinware.arete.mixins.ServerMetadataS2CPacketMixin -> com.cousinware.arete.mixins.ServerMetadataS2CPacketMixin:
+    void <init>() -> <init>
+com.cousinware.arete.mixins.TitleScreenMixin -> com.cousinware.arete.mixins.TitleScreenMixin:
+    void <init>() -> <init>
+    void TitleScreenInit(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> TitleScreenInit
+    void userData(net.minecraft.class_332,int,int,float,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> userData
+com.cousinware.arete.mixins.WorldRendererMixin -> com.cousinware.arete.mixins.WorldRendererMixin:
+    int field_4073 -> field_4073
+    void <init>() -> <init>
+    void renderEntity(net.minecraft.class_1297,double,double,double,float,net.minecraft.class_4587,net.minecraft.class_4597,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> renderEntity
+    void render(net.minecraft.class_9779,boolean,net.minecraft.class_4184,net.minecraft.class_757,net.minecraft.class_765,org.joml.Matrix4f,org.joml.Matrix4f,org.spongepowered.asm.mixin.injection.callback.CallbackInfo,net.minecraft.class_4587,net.minecraft.class_4597$class_4598) -> render
+com.cousinware.arete.module.Client.ClickGui -> com.cousinware.arete.module.Client.ClickGui:
+    com.cousinware.arete.utils.settings.IntSetting r -> r
+    com.cousinware.arete.utils.settings.IntSetting g -> g
+    com.cousinware.arete.utils.settings.IntSetting b -> b
+    com.cousinware.arete.utils.settings.IntSetting a -> a
+    int delay -> a
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.Client.Core -> com.cousinware.arete.module.Client.Core:
+    com.cousinware.arete.utils.settings.BoolSetting capes -> capes
+    com.cousinware.arete.utils.settings.ModeSetting cape -> cape
+    com.cousinware.arete.utils.settings.BoolSetting customFont -> customFont
+    com.cousinware.arete.utils.settings.BoolSetting moveFix -> moveFix
+    com.cousinware.arete.utils.settings.BoolSetting t2 -> t2
+    com.cousinware.arete.utils.settings.BoolSetting t3 -> t3
+    com.cousinware.arete.utils.settings.IntSetting fontQuality -> fontQuality
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.Client.FontManagerModule -> com.cousinware.arete.module.Client.FontManagerModule:
+    void <init>() -> <init>
+    void onEnable() -> onEnable
+com.cousinware.arete.module.Client.Game -> com.cousinware.arete.module.Client.Game:
+    int delay -> a
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+com.cousinware.arete.module.Client.OutgoingPackets -> com.cousinware.arete.module.Client.OutgoingPackets:
+    void <init>() -> <init>
+    void packetListener(com.cousinware.arete.events.event.PacketEvent$Send) -> packetListener
+    void onEnable() -> onEnable
+    void onDisable() -> onDisable
+com.cousinware.arete.module.Module -> com.cousinware.arete.module.Module:
+    java.lang.String name -> a
+    com.cousinware.arete.module.Module$Category category -> a
+    boolean drawn -> a
+    int hexDecimalColor -> b
+    java.lang.String description -> b
+    java.util.ArrayList settings -> a
+    int keybind -> c
+    net.minecraft.class_310 mc -> mc
+    boolean prioritySetting -> prioritySetting
+    java.lang.Integer priority -> priority
+    boolean enabled -> b
+    void <init>(java.lang.String,com.cousinware.arete.module.Module$Category,int,java.lang.String) -> <init>
+    void <init>(java.lang.String,com.cousinware.arete.module.Module$Category,int) -> <init>
+    java.lang.Integer getPriority() -> getPriority
+    void enablePriority(int) -> enablePriority
+    void onUpdate() -> onUpdate
+    void onPostUpdate() -> onPostUpdate
+    void onEnable() -> onEnable
+    void onDisable() -> onDisable
+    void enable() -> enable
+    void disable() -> disable
+    void toggle() -> toggle
+    java.util.ArrayList getSettings() -> getSettings
+    void addSetting(com.cousinware.arete.utils.settings.Setting) -> addSetting
+    boolean isEnabled() -> isEnabled
+    java.lang.String getName() -> getName
+    void setKeybind(int) -> setKeybind
+    int getKeybind() -> getKeybind
+    com.cousinware.arete.module.Module$Category getCategory() -> getCategory
+    com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString getHudInfo() -> getHudInfo
+    java.lang.String hudInfoPrefix() -> hudInfoPrefix
+    java.lang.String hudInfoSuffix() -> hudInfoSuffix
+    boolean isDrawn() -> isDrawn
+    void setDrawn(boolean) -> setDrawn
+com.cousinware.arete.module.Module$Category -> com.cousinware.arete.module.Module$Category:
+    com.cousinware.arete.module.Module$Category Combat -> Combat
+    com.cousinware.arete.module.Module$Category Misc -> Misc
+    com.cousinware.arete.module.Module$Category Player -> Player
+    com.cousinware.arete.module.Module$Category Render -> Render
+    com.cousinware.arete.module.Module$Category Client -> Client
+    com.cousinware.arete.module.Module$Category[] $VALUES -> a
+    com.cousinware.arete.module.Module$Category[] values() -> values
+    com.cousinware.arete.module.Module$Category valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    com.cousinware.arete.module.Module$Category[] $values() -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.combat.Aura2 -> com.cousinware.arete.module.combat.Aura2:
+    com.cousinware.arete.utils.settings.DoubleSetting range -> a
+    com.cousinware.arete.utils.settings.BoolSetting players -> a
+    com.cousinware.arete.utils.settings.ModeSetting attackMode -> a
+    com.cousinware.arete.utils.settings.ModeSetting rotaionsMode -> b
+    com.cousinware.arete.utils.settings.BoolSetting passive -> b
+    com.cousinware.arete.utils.settings.BoolSetting hostile -> c
+    com.cousinware.arete.utils.settings.BoolSetting neutral -> d
+    com.cousinware.arete.utils.rotations.RotationSystem rotationSystem -> a
+    float partialTicks -> partialTicks
+    net.minecraft.class_1297 target -> a
+    int delay -> a
+    boolean attack -> c
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void onEnable() -> onEnable
+    void switchAttack() -> switchAttack
+    void attack() -> attack
+    void packetListener(com.cousinware.arete.events.event.PacketEvent$Send) -> packetListener
+    void worldRender(com.cousinware.arete.events.event.RenderWorldEvent) -> worldRender
+    net.minecraft.class_243 getLerpPos(net.minecraft.class_1297,float) -> getLerpPos
+    net.minecraft.class_1297 getTarget() -> getTarget
+    boolean isNeutralEntity(net.minecraft.class_1297) -> isNeutralEntity
+    com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString getHudInfo() -> getHudInfo
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.misc.ChestStealer -> com.cousinware.arete.module.misc.ChestStealer:
+    com.cousinware.arete.utils.settings.IntSetting delaySetting -> a
+    com.cousinware.arete.utils.settings.IntSetting stealPerTick -> b
+    com.cousinware.arete.utils.settings.BoolSetting closeOnEmpty -> a
+    java.util.Queue stealPos -> a
+    int delay -> a
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void getStealIndex() -> getStealIndex
+com.cousinware.arete.module.misc.EmpChat -> com.cousinware.arete.module.misc.EmpChat:
+    com.cousinware.arete.utils.settings.ModeSetting mode -> mode
+    com.cousinware.arete.utils.settings.BoolSetting verify -> verify
+    com.cousinware.arete.utils.settings.BoolSetting showRanks -> showRanks
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.misc.ExtraTab -> com.cousinware.arete.module.misc.ExtraTab:
+    com.cousinware.arete.utils.settings.IntSetting playersShown -> playersShown
+    com.cousinware.arete.utils.settings.IntSetting rowLength -> rowLength
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void onDisable() -> onDisable
+    void onRender(com.cousinware.arete.events.event.PlayerListHudRenderEvent) -> onRender
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.misc.LogoutCoords -> com.cousinware.arete.module.misc.LogoutCoords:
+    void <init>() -> <init>
+    void onPlayerLeaveEvent(com.cousinware.arete.events.event.DisconnectEvent) -> onPlayerLeaveEvent
+com.cousinware.arete.module.combat.MaceTweaks -> com.cousinware.arete.module.combat.MaceTweaks:
+    com.cousinware.arete.utils.settings.BoolSetting bypassDelay -> bypassDelay
+    com.cousinware.arete.utils.settings.IntSetting damageSpoof -> damageSpoof
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.misc.Welcomer -> com.cousinware.arete.module.misc.Welcomer:
+    int joinedServerTicks -> a
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void playerJoinServer(com.cousinware.arete.events.event.PlayerJoinServerEvent) -> playerJoinServer
+    void playerLeaveServer(com.cousinware.arete.events.event.PlayerLeaveServerEvent) -> playerLeaveServer
+    void packetListener(com.cousinware.arete.events.event.PacketEvent$Send) -> packetListener
+    void playerLoadIntoGame(com.cousinware.arete.events.event.LoadingIntoGameEvent) -> playerLoadIntoGame
+    void lambda$playerJoinServer$0(java.util.List,net.minecraft.class_742) -> a
+com.cousinware.arete.module.player.AntiVoid -> com.cousinware.arete.module.player.AntiVoid:
+    com.cousinware.arete.utils.settings.ModeSetting rotaionsMode -> a
+    com.cousinware.arete.utils.settings.BoolSetting cactus -> cactus
+    com.cousinware.arete.utils.settings.BoolSetting web -> web
+    com.cousinware.arete.utils.settings.BoolSetting fireBall -> fireBall
+    com.cousinware.arete.utils.settings.BoolSetting shulkerBullet -> shulkerBullet
+    com.cousinware.arete.utils.settings.ModeSetting fire -> fire
+    com.cousinware.arete.utils.rotations.RotationSystem rotationSystem -> rotationSystem
+    net.minecraft.class_2338 renderPosFire -> renderPosFire
+    net.minecraft.class_1297 renderEntityShulkerBullet -> renderEntityShulkerBullet
+    net.minecraft.class_1297 renderEntityFireBall -> renderEntityFireBall
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    net.minecraft.class_1297 antiFireBall() -> antiFireBall
+    net.minecraft.class_2338 breakFire() -> breakFire
+    void outGoingPackets(com.cousinware.arete.events.event.PacketEvent$Send) -> outGoingPackets
+    void onDisable() -> onDisable
+    void renderWorld(com.cousinware.arete.events.event.RenderWorldEvent) -> renderWorld
+    void onEnable() -> onEnable
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.player.Freecam -> com.cousinware.arete.module.player.Freecam:
+    net.minecraft.class_1657 playerEntity -> a
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void packetListener(com.cousinware.arete.events.event.PacketEvent$Send) -> packetListener
+    void onEnable() -> onEnable
+    void onDisable() -> onDisable
+com.cousinware.arete.module.player.Scaffold2 -> com.cousinware.arete.module.player.Scaffold2:
+    com.cousinware.arete.utils.rotations.RotationSystem rotationSystem -> a
+    com.cousinware.arete.utils.settings.ModeSetting rotaionsMode -> a
+    net.minecraft.class_243 targetPlaceBlock -> a
+    net.minecraft.class_2350[] reversePlace -> a
+    net.minecraft.class_2350[] directionsss -> b
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void renderWorld(com.cousinware.arete.events.event.RenderWorldEvent) -> renderWorld
+    void placeBlock(com.cousinware.arete.managers.RotationManager$Rotaion) -> placeBlock
+    void packetListener(com.cousinware.arete.events.event.PacketEvent$Send) -> packetListener
+    net.minecraft.class_243 getTargetPlaceBlock() -> getTargetPlaceBlock
+    net.minecraft.class_243 getTaghreP() -> getTaghreP
+    net.minecraft.class_2338 canWeEvenPlaceABlock(net.minecraft.class_2338,int) -> canWeEvenPlaceABlock
+com.cousinware.arete.module.player.Step -> com.cousinware.arete.module.player.Step:
+    int delay -> a
+    int startingY -> d
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void onEnable() -> onEnable
+    void out(com.cousinware.arete.events.event.PacketEvent$Send) -> out
+    void in(com.cousinware.arete.events.event.PacketEvent$Receive) -> in
+com.cousinware.arete.module.render.CustomMouse -> com.cousinware.arete.module.render.CustomMouse:
+    void <init>() -> <init>
+    void render(com.cousinware.arete.events.event.RenderOverlayEvent) -> render
+com.cousinware.arete.module.render.EntityESP -> com.cousinware.arete.module.render.EntityESP:
+    com.cousinware.arete.utils.settings.BoolSetting players -> players
+    com.cousinware.arete.utils.settings.BoolSetting passive -> passive
+    com.cousinware.arete.utils.settings.BoolSetting hostile -> hostile
+    com.cousinware.arete.utils.settings.BoolSetting neutral -> neutral
+    com.cousinware.arete.utils.settings.DoubleSetting distance -> distance
+    int i -> a
+    int delay -> d
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void renderWorld(com.cousinware.arete.events.event.RenderWorldEvent) -> renderWorld
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.render.ModuleList -> com.cousinware.arete.module.render.ModuleList:
+    int offset -> a
+    void <init>() -> <init>
+    void render(com.cousinware.arete.events.event.RenderOverlayEvent) -> render
+    void lambda$render$1(com.cousinware.arete.events.event.RenderOverlayEvent,com.cousinware.arete.module.Module) -> a
+    java.lang.Integer lambda$render$0(com.cousinware.arete.module.Module) -> a
+com.cousinware.arete.module.render.NameTags -> com.cousinware.arete.module.render.NameTags:
+    com.cousinware.arete.utils.settings.BoolSetting health -> health
+    com.cousinware.arete.utils.settings.BoolSetting empCheck -> empCheck
+    com.cousinware.arete.utils.settings.ModeSetting armorMode -> armorMode
+    com.cousinware.arete.utils.settings.BoolSetting ping -> ping
+    com.cousinware.arete.utils.settings.ModeSetting hands -> hands
+    double partial -> partial
+    void <init>() -> <init>
+    void worldRender(com.cousinware.arete.events.event.RenderWorldEvent) -> worldRender
+    void renderItems(net.minecraft.class_1657) -> a
+    void renderArmor(net.minecraft.class_1657) -> b
+    net.minecraft.class_2561 getEntityName(net.minecraft.class_1657) -> a
+    net.minecraft.class_124 getHealthColor(double) -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.render.NoRender -> com.cousinware.arete.module.render.NoRender:
+    com.cousinware.arete.utils.settings.BoolSettingContainer warden -> warden
+    com.cousinware.arete.utils.settings.DoubleSetting wardenDistance -> wardenDistance
+    com.cousinware.arete.utils.settings.BoolSetting noChatWarning -> noChatWarning
+    void <init>() -> <init>
+    void onUpdate() -> onUpdate
+    void <clinit>() -> <clinit>
+com.cousinware.arete.module.render.StorageESP -> com.cousinware.arete.module.render.StorageESP:
+    com.cousinware.arete.utils.settings.BoolSettingContainer chet -> chet
+    com.cousinware.arete.utils.settings.BoolSetting chest -> chest
+    com.cousinware.arete.utils.settings.BoolSetting eChest -> eChest
+    com.cousinware.arete.utils.settings.BoolSetting shulker -> shulker
+    com.cousinware.arete.utils.settings.BoolSetting barrel -> barrel
+    void <init>() -> <init>
+    void renderWorld(com.cousinware.arete.events.event.RenderWorldEvent) -> renderWorld
+    net.minecraft.class_238 getBlockBoundingBox(net.minecraft.class_2586) -> a
+    java.awt.Color getColor(net.minecraft.class_2586) -> a
+    boolean isChest(net.minecraft.class_2586) -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.BlockInteractionHelper -> com.cousinware.arete.utils.BlockInteractionHelper:
+    void <init>() -> <init>
+    boolean canPlaceBlock(net.minecraft.class_2338) -> canPlaceBlock
+    net.minecraft.class_2338 vec3dToPos(net.minecraft.class_243) -> vec3dToPos
+    com.cousinware.arete.managers.RotationManager$Rotaion placeBlock(net.minecraft.class_2338,net.minecraft.class_243) -> placeBlock
+    void placeBlockFix(com.cousinware.arete.managers.RotationManager$Rotaion) -> placeBlockFix
+    com.cousinware.arete.managers.RotationManager$Rotaion placeBlockRecursive(net.minecraft.class_2338,int) -> placeBlockRecursive
+com.cousinware.arete.utils.ColorUtils -> com.cousinware.arete.utils.ColorUtils:
+    void <init>() -> <init>
+    java.awt.Color convertAlpha(java.awt.Color,int) -> convertAlpha
+com.cousinware.arete.utils.EntityUtil -> com.cousinware.arete.utils.EntityUtil:
+    float tickDelta -> tickDelta
+    void <init>() -> <init>
+    java.util.ArrayList getBlockEntities() -> getBlockEntities
+    java.util.ArrayList getLoadedChunks() -> getLoadedChunks
+    boolean isNeutralEntity(net.minecraft.class_1297) -> isNeutralEntity
+    boolean isNeutralEntityHostile(net.minecraft.class_1297) -> isNeutralEntityHostile
+    java.awt.Color getEntityColor(net.minecraft.class_1297) -> getEntityColor
+    void setTickDelta(float) -> setTickDelta
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.InventoryUtils -> com.cousinware.arete.utils.InventoryUtils:
+    net.minecraft.class_310 mc -> mc
+    void <init>() -> <init>
+    int getItemInHotBar(net.minecraft.class_1792) -> getItemInHotBar
+    int getFirstBlockInHotBar() -> getFirstBlockInHotBar
+    int swapToItem(int,boolean) -> swapToItem
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.MinecraftInterface -> com.cousinware.arete.utils.MinecraftInterface:
+    net.minecraft.class_310 mc -> mc
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.rendering.Renderer -> com.cousinware.arete.utils.rendering.Renderer:
+    double partial -> partial
+    org.joml.Vector3f[] shaderLight -> a
+    void <init>() -> <init>
+    void drawBoxOutline(net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color) -> drawBoxOutline
+    void drawSolidBox(net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color) -> drawSolidBox
+    void drawSolidBoxTEST(net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,java.awt.Color) -> drawSolidBoxTEST
+    void drawSolidBox(net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,int,int,int,int) -> drawSolidBox
+    void drawSolidBoxTEST(net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,int,int,int,int) -> drawSolidBoxTEST
+    void drawBoxOutline(net.minecraft.class_238,net.minecraft.class_243,com.cousinware.arete.events.event.RenderWorldEvent,int,int,int,int) -> drawBoxOutline
+    void start(net.minecraft.class_238,net.minecraft.class_4587,net.minecraft.class_4184) -> a
+    void stop(net.minecraft.class_4587,net.minecraft.class_287) -> a
+    java.lang.String getRandomId() -> getRandomId
+    void drawTextMatrix(net.minecraft.class_4587,net.minecraft.class_2561,double,double,double,double,double,double,boolean) -> drawTextMatrix
+    void drawText(net.minecraft.class_2561,double,double,double,double,double,double,boolean) -> drawText
+    void drawGuiItem(double,double,double,double,double,double,net.minecraft.class_1799) -> drawGuiItem
+    net.minecraft.class_4587 matrixFrom(double,double,double) -> matrixFrom
+    double getPartial() -> getPartial
+    void setPartial(double) -> setPartial
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.Timer -> com.cousinware.arete.utils.Timer:
+    long startTime -> a
+    int fps -> a
+    int ticksExecuted -> b
+    long tpsStartTime -> b
+    int delay -> c
+    java.lang.String timerName -> a
+    void <init>() -> <init>
+    void <init>(int) -> <init>
+    void <init>(int,java.lang.String) -> <init>
+    void startTimer() -> a
+    long timePassed() -> timePassed
+    boolean canTick() -> canTick
+    int getTps() -> getTps
+    void reset() -> reset
+    int getTicksExecuted() -> getTicksExecuted
+com.cousinware.arete.utils.guis.clickgui.defaultguis.Widget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.Widget:
+    int x -> x
+    int y -> y
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget moduleWidget -> moduleWidget
+    int modYYY -> modYYY
+    void <init>() -> <init>
+    void render(net.minecraft.class_332) -> render
+    void click(double,double,int,int) -> click
+    void modY(int) -> modY
+    void setY(int) -> setY
+    int getX() -> getX
+    int getY() -> getY
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget getModuleWidget() -> getModuleWidget
+    int getModYYY() -> getModYYY
+    void setX(int) -> setX
+    void setModuleWidget(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget) -> setModuleWidget
+    void setModYYY(int) -> setModYYY
+com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGui -> com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGui:
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGuiFrame frame -> a
+    int mouseX -> mouseX
+    int mouseY -> mouseY
+    void <init>() -> <init>
+    void method_25394(net.minecraft.class_332,int,int,float) -> method_25394
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGuiFrame -> com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGuiFrame:
+    java.lang.String title -> a
+    int x -> x
+    int y -> y
+    int width -> width
+    int height -> height
+    int lastMouseX -> a
+    int lastMouseY -> b
+    boolean fling -> a
+    boolean isDragging -> b
+    boolean open -> c
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.FontWidget fontWidget -> a
+    void <init>(java.lang.String,int,int) -> <init>
+    void render(net.minecraft.class_332,int,int) -> render
+    void drawCategoryBox(net.minecraft.class_332) -> drawCategoryBox
+    void doDragging(int,int) -> doDragging
+    void mouseClicked(double,double,int,int) -> mouseClicked
+    boolean isCollided(int,int) -> isCollided
+com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui -> com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui:
+    boolean gameRunning -> gameRunning
+    java.util.ArrayList waterFighters -> waterFighters
+    java.util.ArrayList fireFighters -> fireFighters
+    java.util.ArrayList spongeFighters -> spongeFighters
+    int screenWidth -> screenWidth
+    int screenHeight -> screenHeight
+    void method_25394(net.minecraft.class_332,int,int,float) -> method_25394
+    void <init>() -> <init>
+    void startGame() -> startGame
+    void generateFighters() -> generateFighters
+com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fighter -> com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fighter:
+    int x -> a
+    int y -> b
+    int width -> c
+    int height -> d
+    void <init>(int,int) -> <init>
+    void setX(int) -> setX
+    int getX() -> getX
+    void setY(int) -> setY
+    int getY() -> getY
+    void render(net.minecraft.class_332) -> render
+    void tick() -> tick
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fighter findClosest(java.util.ArrayList) -> findClosest
+    float distanceTo(com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fighter) -> distanceTo
+    void move(com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fighter,com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fighter) -> move
+com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fire -> com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Fire:
+    void <init>(int,int) -> <init>
+com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Sponge -> com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Sponge:
+    void <init>(int,int) -> <init>
+com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Water -> com.cousinware.arete.utils.guis.clickgui.defaultguis.gamegui.GameGui$Water:
+    void <init>(int,int) -> <init>
+com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.AreteGui -> com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.AreteGui:
+    double mouseX -> mouseX
+    double mouseY -> mouseY
+    java.awt.Color color -> color
+    java.awt.Color gray -> gray
+    java.util.ArrayList frames -> frames
+    void <init>() -> <init>
+    boolean method_25405(double,double) -> method_25405
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void method_25394(net.minecraft.class_332,int,int,float) -> method_25394
+    void method_25420(net.minecraft.class_332,int,int,float) -> method_25420
+    boolean method_25421() -> method_25421
+    void method_25426() -> method_25426
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Frame -> com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Frame:
+    com.cousinware.arete.module.Module$Category category -> a
+    java.util.ArrayList modules -> a
+    java.util.ArrayList moduleWidgets -> moduleWidgets
+    boolean isDragging -> a
+    boolean open -> b
+    int x -> x
+    int y -> y
+    int width -> width
+    int height -> height
+    int lastMouseX -> a
+    int lastMouseY -> b
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Velocity velocity -> velocity
+    boolean fling -> c
+    com.cousinware.arete.events.event.MouseButtonLocationEvent lastMouseButton -> lastMouseButton
+    void <init>(com.cousinware.arete.module.Module$Category,int,int) -> <init>
+    void render(net.minecraft.class_332,int,int) -> render
+    void addVelocity(int,int) -> addVelocity
+    void genSetting(net.minecraft.class_332) -> genSetting
+    void doVelocity() -> doVelocity
+    void drawModules(net.minecraft.class_332) -> drawModules
+    void doDragging(int,int) -> doDragging
+    void mouseClicked(double,double,int,int) -> mouseClicked
+    void drawCategoryBox(net.minecraft.class_332) -> drawCategoryBox
+    boolean isCollided(int,int) -> isCollided
+    void regen() -> regen
+    int shouldModifyPosition(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget) -> a
+    void lambda$regen$1(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget) -> a
+    void lambda$regen$0(com.cousinware.arete.utils.guis.clickgui.defaultguis.Widget) -> a
+com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Velocity -> com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Velocity:
+    double xV -> a
+    double yV -> b
+    double slipperyness -> c
+    void <init>(double,double) -> <init>
+    void applyVelocity(double,double) -> applyVelocity
+    void setVelocity(double,double) -> setVelocity
+    void tick() -> tick
+    double getxV() -> getxV
+    void flipXVel(boolean) -> flipXVel
+    void flipYVel(boolean) -> flipYVel
+    double getyV() -> getyV
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.BindWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.BindWidget:
+    boolean binding -> a
+    int yOffset -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void onMousePress(com.cousinware.arete.events.event.KeyPressedEvent) -> onMousePress
+    void drawGrayBox(net.minecraft.class_332) -> drawGrayBox
+    void render(net.minecraft.class_332) -> render
+    boolean isCollided(int,int) -> isCollided
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.BoolSettingContainerWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.BoolSettingContainerWidget:
+    java.util.ArrayList validWidgets -> a
+    com.cousinware.arete.utils.settings.BoolSettingContainer setting -> a
+    boolean opened -> a
+    int yOffset -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,com.cousinware.arete.utils.settings.BoolSettingContainer,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void drawGrayBox(net.minecraft.class_332) -> drawGrayBox
+    void render(net.minecraft.class_332) -> render
+    void drawExposedSettings() -> drawExposedSettings
+    int getIndex(com.cousinware.arete.utils.settings.Setting) -> getIndex
+    void unDrawExposedSettings() -> unDrawExposedSettings
+    void regen() -> regen
+    boolean isCollided(int,int) -> isCollided
+    com.cousinware.arete.utils.settings.BoolSettingContainer getSetting() -> getSetting
+    void setSetting(com.cousinware.arete.utils.settings.BoolSettingContainer) -> setSetting
+    boolean isOpened() -> isOpened
+    void setOpened(boolean) -> setOpened
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.BoolSettingWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.BoolSettingWidget:
+    com.cousinware.arete.utils.settings.BoolSetting setting -> a
+    int yOffset -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,com.cousinware.arete.utils.settings.BoolSetting,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void drawGrayBox(net.minecraft.class_332) -> drawGrayBox
+    void render(net.minecraft.class_332) -> render
+    boolean isCollided(int,int) -> isCollided
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.FontWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.FontWidget:
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGuiFrame frame -> a
+    java.lang.String font -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    int index -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.fontgui.FontGuiFrame,int,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void render(net.minecraft.class_332) -> render
+    void renderSetFontButton(net.minecraft.class_332) -> renderSetFontButton
+    void renderFontName(net.minecraft.class_332) -> renderFontName
+    void renderRightButton(net.minecraft.class_332) -> renderRightButton
+    void renderLeftButton(net.minecraft.class_332) -> renderLeftButton
+    void renderFontExample(net.minecraft.class_332) -> renderFontExample
+    boolean isCollidingLeftButton() -> isCollidingLeftButton
+    boolean isCollidingRightButton() -> isCollidingRightButton
+    boolean isCollidingSetFontButton() -> isCollidingSetFontButton
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModeSettingWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModeSettingWidget:
+    com.cousinware.arete.utils.settings.ModeSetting setting -> a
+    int yOffset -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,com.cousinware.arete.utils.settings.ModeSetting,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void render(net.minecraft.class_332) -> render
+    boolean isCollided(int,int) -> isCollided
+    void drawGrayBox(net.minecraft.class_332) -> drawGrayBox
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget:
+    long nvgContext -> nvgContext
+    int font -> font
+    com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Frame parent -> a
+    com.cousinware.arete.module.Module module -> module
+    boolean opened -> a
+    int x -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    int centeredX -> centeredX
+    int OGOFFSET -> b
+    int offSetY -> c
+    int offSetY2 -> d
+    int y -> e
+    java.util.ArrayList settings -> a
+    java.util.ArrayList settingWidgets -> b
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.maingui.Frame,com.cousinware.arete.module.Module,int,int) -> <init>
+    void render(net.minecraft.class_332) -> render
+    void renderBoxes(net.minecraft.class_332,int,int) -> renderBoxes
+    boolean isOpened() -> isOpened
+    void modY(int) -> modY
+    int getY() -> getY
+    int getX() -> getX
+    void addSetting(com.cousinware.arete.utils.settings.Setting) -> addSetting
+    void addSettingWidget(com.cousinware.arete.utils.guis.clickgui.defaultguis.Widget) -> addSettingWidget
+    java.util.ArrayList getSeetingWidget() -> getSeetingWidget
+    java.util.ArrayList getSettings() -> getSettings
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    boolean isCollided(int,int) -> isCollided
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.PriorityWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.PriorityWidget:
+    com.cousinware.arete.utils.settings.Setting setting -> a
+    double barLengthXMod -> a
+    double barLengthX -> b
+    double mouseX -> c
+    double mouseY -> d
+    boolean dragging -> a
+    double max -> e
+    double min -> f
+    double value -> g
+    int yOffset -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,com.cousinware.arete.utils.settings.IntSetting,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void render(net.minecraft.class_332) -> render
+    void drawGrayBox(net.minecraft.class_332) -> drawGrayBox
+    boolean isCollided(int,int) -> isCollided
+com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.SliderSettingWidget -> com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.SliderSettingWidget:
+    com.cousinware.arete.utils.settings.Setting setting -> a
+    double barLengthXMod -> a
+    double barLengthX -> b
+    double mouseX -> c
+    double mouseY -> d
+    boolean dragging -> a
+    double max -> e
+    double min -> f
+    double value -> g
+    int yOffset -> a
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,com.cousinware.arete.utils.settings.IntSetting,int) -> <init>
+    void <init>(com.cousinware.arete.utils.guis.clickgui.defaultguis.widgets.ModuleWidget,com.cousinware.arete.utils.settings.DoubleSetting,int) -> <init>
+    void onMousePress(com.cousinware.arete.events.event.MouseButtonEvent) -> onMousePress
+    void render(net.minecraft.class_332) -> render
+    void drawGrayBox(net.minecraft.class_332) -> drawGrayBox
+    boolean isCollided(int,int) -> isCollided
+com.cousinware.arete.utils.emp.Member -> com.cousinware.arete.utils.emp.Member:
+    java.lang.String name -> a
+    java.util.ArrayList rank -> a
+    java.util.ArrayList aliases -> b
+    net.minecraft.class_124 mainColor -> a
+    void <init>(java.lang.String,com.cousinware.arete.utils.emp.Member$Rank,java.lang.String[]) -> <init>
+    void <init>(java.lang.String,java.lang.String[],java.lang.String[]) -> <init>
+    net.minecraft.class_124 getMainColor() -> getMainColor
+    java.util.ArrayList getRanks() -> getRanks
+    java.lang.String getName() -> getName
+    boolean isAlt() -> isAlt
+    java.lang.String toString() -> toString
+    com.cousinware.arete.utils.emp.Member getMember(java.lang.String) -> getMember
+    net.minecraft.class_124 getRankColor(com.cousinware.arete.utils.emp.Member$Rank) -> getRankColor
+    net.minecraft.class_124 randomColor() -> randomColor
+    com.cousinware.arete.utils.emp.Member$Rank getRank(java.lang.String) -> getRank
+com.cousinware.arete.utils.emp.Member$Rank -> com.cousinware.arete.utils.emp.Member$Rank:
+    com.cousinware.arete.utils.emp.Member$Rank InnerCircle -> InnerCircle
+    com.cousinware.arete.utils.emp.Member$Rank Omega -> Omega
+    com.cousinware.arete.utils.emp.Member$Rank Delta -> Delta
+    com.cousinware.arete.utils.emp.Member$Rank Zeta -> Zeta
+    com.cousinware.arete.utils.emp.Member$Rank Gamma -> Gamma
+    com.cousinware.arete.utils.emp.Member$Rank Sigma -> Sigma
+    com.cousinware.arete.utils.emp.Member$Rank Alumni -> Alumni
+    com.cousinware.arete.utils.emp.Member$Rank Unknown -> Unknown
+    com.cousinware.arete.utils.emp.Member$Rank Ally -> Ally
+    com.cousinware.arete.utils.emp.Member$Rank Custom -> Custom
+    com.cousinware.arete.utils.emp.Member$Rank FifthColumn -> FifthColumn
+    com.cousinware.arete.utils.emp.Member$Rank NoxShop -> NoxShop
+    com.cousinware.arete.utils.emp.Member$Rank PvPChief -> PvPChief
+    com.cousinware.arete.utils.emp.Member$Rank Dev -> Dev
+    com.cousinware.arete.utils.emp.Member$Rank GoonSquad -> GoonSquad
+    com.cousinware.arete.utils.emp.Member$Rank[] $VALUES -> a
+    com.cousinware.arete.utils.emp.Member$Rank[] values() -> values
+    com.cousinware.arete.utils.emp.Member$Rank valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    com.cousinware.arete.utils.emp.Member$Rank[] $values() -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.emp.Users -> com.cousinware.arete.utils.emp.Users:
+    java.net.URL link -> link
+    java.util.ArrayList users -> users
+    void <init>() -> <init>
+    void genMembers() -> genMembers
+    java.lang.String[] getAliases(java.lang.String) -> getAliases
+    java.lang.String[] getRanks(java.lang.String) -> getRanks
+    void fetch() -> fetch
+    void getFriends() -> getFriends
+    java.util.ArrayList getUsers() -> getUsers
+com.cousinware.arete.utils.file.ConfigFolder -> com.cousinware.arete.utils.file.ConfigFolder:
+    java.io.File arete -> arete
+    java.io.File fonts -> fonts
+    java.io.File settings -> settings
+    java.lang.String dir -> a
+    void <init>() -> <init>
+    void loadEnabledFile() -> loadEnabledFile
+    void loadBindFile() -> loadBindFile
+    void loadBooleanFile() -> loadBooleanFile
+    void loadIntFile() -> loadIntFile
+    void loadDoubleFile() -> loadDoubleFile
+    void loadModeFile() -> loadModeFile
+    void genFolder() -> genFolder
+com.cousinware.arete.utils.file.ConfigFolder$ShutDown -> com.cousinware.arete.utils.file.ConfigFolder$ShutDown:
+    void <init>() -> <init>
+    void saveConfig() -> saveConfig
+    void saveEnabledFile() -> saveEnabledFile
+    void saveBindFile() -> saveBindFile
+    void saveBooleanFile() -> saveBooleanFile
+    void saveIntFile() -> saveIntFile
+    void saveDoubleFile() -> saveDoubleFile
+    void saveModeFile() -> saveModeFile
+    void run() -> run
+com.cousinware.arete.utils.guis.jguis.FailedHwidCheckGui -> com.cousinware.arete.utils.guis.jguis.FailedHwidCheckGui:
+    javax.swing.JFrame frame -> a
+    javax.swing.JPanel panel -> a
+    javax.swing.JButton button -> a
+    javax.swing.JLabel label -> a
+    javax.swing.JLabel label2 -> b
+    void <init>() -> <init>
+    void actionPerformed(java.awt.event.ActionEvent) -> actionPerformed
+com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString -> com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString:
+    java.awt.Color color -> a
+    java.lang.String text -> a
+    net.minecraft.class_124 formatting -> a
+    void <init>(java.awt.Color,java.lang.String) -> <init>
+    com.cousinware.arete.utils.rendering.font.nvg.string.coloredstring.ColoredString of(java.awt.Color,java.lang.String) -> of
+    net.minecraft.class_124 colorToFormat(java.awt.Color) -> a
+    void setColor(java.awt.Color) -> setColor
+    void setText(java.lang.String) -> setText
+    void setFormatting(net.minecraft.class_124) -> setFormatting
+    java.awt.Color getColor() -> getColor
+    java.lang.String getText() -> getText
+    net.minecraft.class_124 getFormatting() -> getFormatting
+com.cousinware.arete.utils.rendering.font.nvg.NVGContext -> com.cousinware.arete.utils.rendering.font.nvg.NVGContext:
+    long context -> context
+    net.minecraft.class_310 mc -> a
+    void <init>() -> <init>
+    void init() -> init
+    void render(java.util.function.Consumer) -> render
+    org.lwjgl.nanovg.NVGColor nvgColor(java.awt.Color) -> nvgColor
+    void restoreState() -> restoreState
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.rotations.Rotation -> com.cousinware.arete.utils.rotations.Rotation:
+    void packetListener(com.cousinware.arete.events.event.PacketEvent$Send) -> packetListener
+com.cousinware.arete.utils.rotations.RotationSystem -> com.cousinware.arete.utils.rotations.RotationSystem:
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION action -> a
+    com.cousinware.arete.managers.RotationManager$Rotaion rotaion -> a
+    boolean movementSimulation -> a
+    void <init>() -> <init>
+    void rotate(net.minecraft.class_243) -> rotate
+    void rotate(net.minecraft.class_243,boolean) -> rotate
+    void modifyPacket(net.minecraft.class_2828) -> modifyPacket
+    void setAction(com.cousinware.arete.utils.rotations.RotationSystem$ACTION) -> setAction
+    void safeStop() -> safeStop
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION getAction() -> getAction
+    com.cousinware.arete.managers.RotationManager$Rotaion getRotaion() -> getRotaion
+    boolean isMovementSimulation() -> isMovementSimulation
+    void setRotaion(com.cousinware.arete.managers.RotationManager$Rotaion) -> setRotaion
+    void setMovementSimulation(boolean) -> setMovementSimulation
+com.cousinware.arete.utils.rotations.RotationSystem$ACTION -> com.cousinware.arete.utils.rotations.RotationSystem$ACTION:
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION Rotating -> Rotating
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION DoingAction -> DoingAction
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION Nothing -> Nothing
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION[] $VALUES -> a
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION[] values() -> values
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    com.cousinware.arete.utils.rotations.RotationSystem$ACTION[] $values() -> a
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.settings.BoolSetting -> com.cousinware.arete.utils.settings.BoolSetting:
+    void <init>() -> <init>
+    com.cousinware.arete.utils.settings.BoolSetting setValue(boolean) -> setValue
+    com.cousinware.arete.utils.settings.BoolSetting setName(java.lang.String) -> setName
+    com.cousinware.arete.utils.settings.BoolSetting build(com.cousinware.arete.module.Module) -> build
+    com.cousinware.arete.utils.settings.BoolSetting build(com.cousinware.arete.module.Module,com.cousinware.arete.utils.settings.BoolSettingContainer) -> build
+com.cousinware.arete.utils.settings.BoolSettingContainer -> com.cousinware.arete.utils.settings.BoolSettingContainer:
+    java.util.ArrayList settingArrayList -> a
+    boolean opened -> a
+    void <init>() -> <init>
+    com.cousinware.arete.utils.settings.BoolSettingContainer setValue(boolean) -> setValue
+    com.cousinware.arete.utils.settings.BoolSettingContainer setName(java.lang.String) -> setName
+    com.cousinware.arete.utils.settings.BoolSettingContainer addSetting(com.cousinware.arete.utils.settings.Setting) -> addSetting
+    com.cousinware.arete.utils.settings.BoolSettingContainer build(com.cousinware.arete.module.Module) -> build
+    java.util.ArrayList getSettingArrayList() -> getSettingArrayList
+    boolean isOpened() -> isOpened
+    void setSettingArrayList(java.util.ArrayList) -> setSettingArrayList
+    void setOpened(boolean) -> setOpened
+com.cousinware.arete.utils.settings.DoubleSetting -> com.cousinware.arete.utils.settings.DoubleSetting:
+    double min -> a
+    double max -> b
+    void <init>() -> <init>
+    com.cousinware.arete.utils.settings.DoubleSetting setMin(double) -> setMin
+    com.cousinware.arete.utils.settings.DoubleSetting setMax(double) -> setMax
+    com.cousinware.arete.utils.settings.DoubleSetting setValue(double) -> setValue
+    com.cousinware.arete.utils.settings.DoubleSetting setName(java.lang.String) -> setName
+    com.cousinware.arete.utils.settings.DoubleSetting build(com.cousinware.arete.module.Module) -> build
+    com.cousinware.arete.utils.settings.DoubleSetting build(com.cousinware.arete.module.Module,com.cousinware.arete.utils.settings.BoolSettingContainer) -> build
+    double getMin() -> getMin
+    double getMax() -> getMax
+com.cousinware.arete.utils.settings.IntSetting -> com.cousinware.arete.utils.settings.IntSetting:
+    int min -> a
+    int max -> b
+    void <init>() -> <init>
+    com.cousinware.arete.utils.settings.IntSetting setMin(int) -> setMin
+    com.cousinware.arete.utils.settings.IntSetting setMax(int) -> setMax
+    com.cousinware.arete.utils.settings.IntSetting setValue(int) -> setValue
+    com.cousinware.arete.utils.settings.IntSetting setName(java.lang.String) -> setName
+    com.cousinware.arete.utils.settings.IntSetting build(com.cousinware.arete.module.Module) -> build
+    com.cousinware.arete.utils.settings.IntSetting build(com.cousinware.arete.module.Module,com.cousinware.arete.utils.settings.BoolSettingContainer) -> build
+    int getMin() -> getMin
+    int getMax() -> getMax
+com.cousinware.arete.utils.settings.ModeSetting -> com.cousinware.arete.utils.settings.ModeSetting:
+    java.util.ArrayList modes -> a
+    int index -> a
+    void <init>() -> <init>
+    com.cousinware.arete.utils.settings.ModeSetting setValue(java.lang.String) -> setValue
+    void advance() -> advance
+    void setup() -> setup
+    com.cousinware.arete.utils.settings.ModeSetting setModes(java.lang.String[]) -> setModes
+    java.util.ArrayList getModes() -> getModes
+    com.cousinware.arete.utils.settings.ModeSetting setName(java.lang.String) -> setName
+    com.cousinware.arete.utils.settings.ModeSetting build(com.cousinware.arete.module.Module) -> build
+    com.cousinware.arete.utils.settings.ModeSetting build(com.cousinware.arete.module.Module,com.cousinware.arete.utils.settings.BoolSettingContainer) -> build
+    com.cousinware.arete.utils.settings.Setting setValue(java.lang.Object) -> setValue
+com.cousinware.arete.utils.settings.Setting -> com.cousinware.arete.utils.settings.Setting:
+    java.lang.Object value -> a
+    java.lang.String name -> a
+    boolean shown -> b
+    com.cousinware.arete.module.Module parent -> a
+    void <init>() -> <init>
+    com.cousinware.arete.utils.settings.Setting setShown(boolean) -> setShown
+    com.cousinware.arete.utils.settings.Setting setValue(java.lang.Object) -> setValue
+    java.lang.Object getValue() -> getValue
+    java.lang.String getName() -> getName
+    boolean isShown() -> isShown
+    com.cousinware.arete.module.Module getParent() -> getParent
+com.cousinware.arete.utils.texture.Capes -> com.cousinware.arete.utils.texture.Capes:
+    java.lang.String[] CAPE_URL -> a
+    java.util.concurrent.ConcurrentHashMap capesMap -> capesMap
+    void <init>() -> <init>
+    void downloadCapes() -> downloadCapes
+    net.minecraft.class_2960 getCurrentCapeLocation() -> getCurrentCapeLocation
+    java.lang.String[] getCapeNames() -> getCapeNames
+    java.lang.String[] getCapesBeforeLaunch() -> getCapesBeforeLaunch
+    java.util.concurrent.ConcurrentHashMap getCapesMap() -> getCapesMap
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.threads.MemberUpdateThread -> com.cousinware.arete.utils.threads.MemberUpdateThread:
+    net.minecraft.class_310 mc -> a
+    boolean enabled -> enabled
+    java.lang.String value -> value
+    com.cousinware.arete.utils.Timer timer -> a
+    void <init>() -> <init>
+    void run() -> run
+    void update() -> update
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.verification.LoginFileHelper -> com.cousinware.arete.utils.verification.LoginFileHelper:
+    java.lang.String userLocation -> a
+    java.io.File userFile -> userFile
+    boolean loginScreen -> a
+    void <init>() -> <init>
+    void genFile() -> genFile
+    void suspendThread() -> suspendThread
+    void saveFileWithData() -> saveFileWithData
+    void <clinit>() -> <clinit>
+com.cousinware.arete.utils.verification.LoginGui -> com.cousinware.arete.utils.verification.LoginGui:
+    javax.swing.JFrame frame -> a
+    javax.swing.JPanel panel -> a
+    java.lang.String username -> username
+    java.lang.String password -> password
+    javax.swing.JButton button -> a
+    javax.swing.JTextField usernameField -> a
+    javax.swing.JPasswordField passwordField -> a
+    javax.swing.JLabel label -> a
+    javax.swing.JLabel label2 -> b
+    void <init>() -> <init>
+    void actionPerformed(java.awt.event.ActionEvent) -> actionPerformed
+com.cousinware.arete.utils.verification.LoginThread -> com.cousinware.arete.utils.verification.LoginThread:
+    boolean invoked -> invoked
+    void <init>() -> <init>
+    void run() -> run
+    void <clinit>() -> <clinit>

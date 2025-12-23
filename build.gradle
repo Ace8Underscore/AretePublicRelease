@@ -1,0 +1,175 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.guardsquare:proguard-gradle:7.6.0'
+    }
+}
+
+
+plugins {
+    id "com.peterabeles.gversion" version "1.10.3"
+    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id "io.freefair.lombok" version "8.13.1"
+    id 'maven-publish'
+}
+
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    // Add repositories to retrieve artifacts from in here.
+    // You should only use this when depending on other mods because
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+    // for more information about repositories.
+    maven { url 'https://jitpack.io' }
+    mavenCentral()
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }
+    maven {
+        name = "meteor-maven"
+        url = "https://maven.meteordev.org/releases"
+    }
+    maven {
+        name = "meteor-maven-snapshots"
+        url = "https://maven.meteordev.org/snapshots"
+    }
+    loom {
+        accessWidenerPath = file("src/main/resources/arete.accesswidener")
+    }
+
+}
+
+var natives = ""
+
+
+switch (org.gradle.internal.os.OperatingSystem.current()) {
+    case org.gradle.internal.os.OperatingSystem.LINUX:
+        def osArch = System.getProperty("os.arch")
+        natives = osArch.startsWith("arm") || osArch.startsWith("aarch64")
+                ? "natives-linux-${osArch.contains("64") || osArch.startsWith("armv8") ? "arm64" : "arm32"}"
+                : "natives-linux"
+        break
+    case org.gradle.internal.os.OperatingSystem.MAC_OS:
+        natives = System.getProperty("os.arch").startsWith("aarch64") ? "natives-macos-arm64" : "natives-macos"
+        break
+    case org.gradle.internal.os.OperatingSystem.WINDOWS:
+        def osArch = System.getProperty("os.arch")
+        natives = osArch.contains("64")
+                ? "natives-windows${osArch.startsWith("aarch64") ? "-arm64" : ""}"
+                : "natives-windows-x86"
+        break
+}
+
+dependencies {
+    // To change the versions see the gradle.properties file
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    implementation(platform("org.lwjgl:lwjgl-bom:3.3.3"))
+    runtimeOnly("org.lwjgl:lwjgl-nanovg::${natives}")
+    include(implementation("org.lwjgl:lwjgl-nanovg:${project.nanovg_version}"))
+
+    modCompileOnly "meteordevelopment:baritone:${baritone_version}-SNAPSHOT"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    include(implementation("org.lwjgl:lwjgl-nanovg::${natives}"))
+
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-linux"))
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-linux-arm64"))
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-linux-arm32"))
+
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-macos-arm64"))
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-macos"))
+
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-windows"))
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-windows-x86"))
+    include(implementation("org.lwjgl:lwjgl-nanovg::natives-windows-arm64"))
+
+
+
+    include(implementation("com.github.Wolfsurge:JavaAnimationSystem:1.11"))
+    //include(implementation('com.github.Vatuu:discord-rpc:1.6.2'))
+
+}
+
+processResources {
+    inputs.property 'id', "arete"
+    inputs.property "version", project.version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_version": project.minecraft_version,
+                "loader_version": project.loader_version
+    }
+}
+
+def targetJavaVersion = 21
+tasks.withType(JavaCompile).configureEach {
+    // ensure that the encoding is set to UTF-8, no matter what the system default is
+    // this fixes some edge cases with special characters not displaying correctly
+    // see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
+    // If Javadoc is generated, this must be specified in that task too.
+    it.options.encoding = "UTF-8"
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        it.options.release.set(targetJavaVersion)
+    }
+}
+
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+    // if it is present.
+    // If you remove this line, sources will not be generated.
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+project.compileJava.dependsOn(createVersionFile)
+
+jar {
+
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}"}
+    }
+}
+
+gversion {
+    srcDir = "src/main/java/"
+    classPackage = "com.cousinware.arete"
+    className = "GitInfo"
+    dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+    timeZone = "EST"
+    debug = false
+    language = "java"
+    explicitType = false
+    indent = "\t"
+    annotate = false
+}
+
+
+
+
+
+
+
+
+

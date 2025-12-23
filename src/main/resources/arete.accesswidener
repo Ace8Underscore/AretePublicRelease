@@ -1,0 +1,62 @@
+accessWidener    v1    named
+accessible method net/minecraft/client/Mouse onMouseButton (JIII)V
+
+mutable field net/minecraft/block/CactusBlock COLLISION_SHAPE Lnet/minecraft/util/shape/VoxelShape;
+accessible field net/minecraft/block/CactusBlock COLLISION_SHAPE Lnet/minecraft/util/shape/VoxelShape;
+
+accessible field net/minecraft/block/AbstractFireBlock BASE_SHAPE Lnet/minecraft/util/shape/VoxelShape;
+mutable field net/minecraft/block/AbstractFireBlock BASE_SHAPE Lnet/minecraft/util/shape/VoxelShape;
+
+accessible class net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket
+
+accessible field net/minecraft/client/gui/hud/ChatHud messages Ljava/util/List;
+mutable field net/minecraft/client/gui/hud/ChatHud messages Ljava/util/List;
+
+accessible field net/minecraft/client/gui/hud/PlayerListHud MAX_ROWS I
+mutable field net/minecraft/client/gui/hud/PlayerListHud MAX_ROWS I
+
+accessible field net/minecraft/client/sound/SoundManager soundSystem Lnet/minecraft/client/sound/SoundSystem;
+mutable field net/minecraft/client/sound/SoundManager soundSystem Lnet/minecraft/client/sound/SoundSystem;
+
+accessible field net/minecraft/client/sound/SoundSystem soundEngine Lnet/minecraft/client/sound/SoundEngine;
+mutable field net/minecraft/client/sound/SoundSystem soundEngine Lnet/minecraft/client/sound/SoundEngine;
+
+accessible field net/minecraft/client/sound/SoundEngine streamingSources Lnet/minecraft/client/sound/SoundEngine$SourceSet;
+mutable field net/minecraft/client/sound/SoundEngine streamingSources Lnet/minecraft/client/sound/SoundEngine$SourceSet;
+
+accessible field net/minecraft/entity/projectile/FireworkRocketEntity lifeTime I
+
+accessible method net/minecraft/client/sound/SoundEngine$SourceSet getSourceCount ()I
+
+accessible field net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket hand Lnet/minecraft/util/Hand;
+mutable field net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket hand Lnet/minecraft/util/Hand;
+
+
+accessible field net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket type Lnet/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractTypeHandler;
+
+accessible class net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractTypeHandler
+accessible class net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractType
+
+accessible field net/minecraft/client/world/ClientWorld pendingUpdateManager Lnet/minecraft/client/network/PendingUpdateManager;
+
+accessible field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket yaw F
+mutable field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket yaw F
+
+accessible field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket pitch F
+mutable field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket pitch F
+
+accessible field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket onGround Z
+mutable field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket onGround Z
+
+accessible field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket y D
+mutable field net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket y D
+
+accessible field net/minecraft/entity/LivingEntity leaningPitch F
+
+accessible field net/minecraft/entity/LivingEntity serverHeadYaw D
+
+accessible method net/minecraft/client/MinecraftClient getWindowTitle ()Ljava/lang/String;
+
+
+
+
